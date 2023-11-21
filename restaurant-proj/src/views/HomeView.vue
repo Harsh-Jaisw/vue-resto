@@ -17,3 +17,9 @@ onMounted(()=>{
 <h2>Hello user , Welcome to Our Page</h2>
   </main>
 </template>
+
+<style>
+h2{
+  font-family: 'Poppins';
+}
+</style>
