@@ -29,7 +29,7 @@ onMounted(()=>{
         <div class="formDiv">
             <input class="inputField" placeholder="Enter Email" type="email" v-model="email" />
             <input class="inputField" placeholder="Enter Password" type="password" v-model="password" />
-            <button class="inputField" v-on:click="handleLogin">Login</button>
+            <button class="LoginButton" v-on:click="handleLogin">Login</button>
 
         </div>
         <p>Don't have an account ? <RouterLink to="/signup">Signup</RouterLink>
@@ -45,7 +45,21 @@ onMounted(()=>{
     min-width: 90vw;
     align-items: center;
 }
+.inputField{
+    height: 20px;
+    border-radius: 12px;
+    padding-left: 14px;
+}
+.LoginButton{
+    height: 28px;
+    background: aquamarine;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    color: #ffffff;
+    font-size: 1.1rem;
 
+}
 .main {
     display: flex;
     gap: 1rem;

@@ -35,10 +35,10 @@ onMounted(()=>{
             <h3 class="signupHeader">Signup Page</h3>
         </div>
         <div class="formDiv">
-            <input placeholder="Enter Name" type="text" v-model="name" />
-            <input placeholder="Enter Email" type="email" v-model="email" />
-            <input placeholder="Enter Password" type="password" v-model="password" />
-            <button v-on:click="handleSignup">Sign Up</button>
+            <input class="inputField" placeholder="Enter Name" type="text" v-model="name" />
+            <input class="inputField" placeholder="Enter Email" type="email" v-model="email" />
+            <input class="inputField" placeholder="Enter Password" type="password" v-model="password" />
+            <button v-on:click="handleSignup" class="signUpButton">Sign Up</button>
 
         </div>
         <p>Already have an account ? <RouterLink to="/login">Login</RouterLink></p>
@@ -54,13 +54,26 @@ onMounted(()=>{
     min-width: 90vw;
     align-items: center;
 }
-
+.inputField{
+    height: 20px;
+    border-radius: 12px;
+    padding-left: 14px;
+}
 .main {
     display: flex;
     gap: 1rem;
     margin-top: 1rem;
 }
+.signUpButton{
+    height: 28px;
+    background: aquamarine;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    color: #ffffff;
+    font-size: 1.1rem;
 
+}
 .formDiv {
     display: flex;
     gap: 1rem;
